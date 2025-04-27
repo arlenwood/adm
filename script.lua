@@ -1,9 +1,7 @@
 local g = game
-local pId = g.PrivateServerId
-local oId = g.PrivateServerOwnerId
 local plr = g.Players.LocalPlayer
 
-if pId ~= "" and oId ~= 0 then
+if #g.Players:GetPlayers() < 2 then
     plr:Kick("Private server detected, NO BOTS ALLOWED")
     return
 end
