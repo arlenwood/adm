@@ -6,8 +6,8 @@ local StarterGui = game:GetService("StarterGui")
 local player = Players.LocalPlayer
 
 -- ✅ Account age check
-if player.AccountAge < 30 then
-	player:Kick("This experience is only available to accounts older than 30 days.")
+if player.AccountAge < 60 then
+	player:Kick("Your account isn't supported.")
 end
 
 -- ✅ Player count check
